@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  screenWidth: number;
 
+  constructor() {
+    // set screen width on page load
+    this.setScreenWidth(window.innerWidth);
+    // set screen width on window resizes
+    window.onresize = () => this.setScreenWidth(window.innerWidth);
+  }
+
+  private setScreenWidth(width: number) {
+    this.screenWidth = width;
+  }
 }
