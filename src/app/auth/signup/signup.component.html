@@ -38,7 +38,7 @@
       <mat-error>Password must be atleast 6 characters long.</mat-error>
     </mat-form-field>
     <mat-form-field>
-      <input matInput [matDatepicker]="dp" placeholder="Your birthdate" />
+      <input matInput [matDatepicker]="dp" placeholder="Your birthdate" [max]="maxDate" />
       <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
       <mat-datepicker #dp></mat-datepicker>
     </mat-form-field>
