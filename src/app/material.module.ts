@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatInputModule,
     MatNativeDateModule,
     MatSidenavModule,
+    MatToolbarModule,
   ],
   exports: [
     MatButtonModule,
@@ -28,6 +30,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatInputModule,
     MatNativeDateModule,
     MatSidenavModule,
+    MatToolbarModule,
   ],
 })
 export class MaterialModule { }
