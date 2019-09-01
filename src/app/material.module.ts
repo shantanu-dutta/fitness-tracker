@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { MatNativeDateModule } from '@angular/material';
     MatIconModule,
     MatInputModule,
     MatNativeDateModule,
+    MatSidenavModule,
   ],
   exports: [
     MatButtonModule,
@@ -25,6 +27,7 @@ import { MatNativeDateModule } from '@angular/material';
     MatIconModule,
     MatInputModule,
     MatNativeDateModule,
+    MatSidenavModule,
   ],
 })
 export class MaterialModule { }
