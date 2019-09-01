@@ -5,9 +5,6 @@
     [opened]="screenWidth > 768"
     [mode]="screenWidth > 768 ? 'side' : 'over'"
   >
-    <mat-sidenav-header>
-      
-    </mat-sidenav-header>
     <p>Sidenav</p>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -18,7 +15,7 @@
         </button>
       </div>
       <div>LOGO</div>
-      <div>
+      <div fxFlex fxLayout fxLayoutAlign="end">
         <a routerLink="/signup">Signup</a>
         <a routerLink="/login">Login</a>
         <a routerLink="/training">Training</a>
