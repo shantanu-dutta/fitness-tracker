@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -14,6 +15,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 @NgModule({
   imports: [
     MatButtonModule,
+    MatCardModule,
     MatCheckboxModule,
     MatDatepickerModule,
     MatFormFieldModule,
@@ -27,6 +29,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   ],
   exports: [
     MatButtonModule,
+    MatCardModule,
     MatCheckboxModule,
     MatDatepickerModule,
     MatFormFieldModule,
