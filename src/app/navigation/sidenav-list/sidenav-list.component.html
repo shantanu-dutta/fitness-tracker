@@ -1,26 +1,28 @@
 <div class="sidenav-header" fxLayout fxLayoutAlign="center center">
-  <a routerLink="/" class="header-text" (click)="onClose()"
-    >Fitness Tracker</a
-  >
+  <a routerLink="/" class="header-text" (click)="onClose()">Fitness Tracker</a>
 </div>
 <hr />
 <mat-nav-list>
-  <a mat-list-item routerLink="/signup" (click)="onClose()">
-    <mat-icon>person_add</mat-icon>
-    <span class="nav-caption">Signup</span>
-  </a>
-  <a mat-list-item routerLink="/login" (click)="onClose()">
-    <mat-icon>exit_to_app</mat-icon>
-    <span class="nav-caption">Login</span>
-  </a>
-  <a mat-list-item routerLink="/training" (click)="onClose()">
-    <mat-icon>fitness_center</mat-icon>
-    <span class="nav-caption">Training</span>
-  </a>
-  <mat-list-item>
-    <button type="button" mat-icon-button (click)="onClose()">
-      <mat-icon>power_settings_new</mat-icon>
-      <span class="nav-caption">Logout</span>
-    </button>
-  </mat-list-item>
+  <ng-container *ngIf="!isAuth">
+    <a mat-list-item routerLink="/signup" (click)="onClose()">
+      <mat-icon>person_add</mat-icon>
+      <span class="nav-caption">Signup</span>
+    </a>
+    <a mat-list-item routerLink="/login" (click)="onClose()">
+      <mat-icon>exit_to_app</mat-icon>
+      <span class="nav-caption">Login</span>
+    </a>
+  </ng-container>
+  <ng-container *ngIf="isAuth">
+    <a mat-list-item routerLink="/training" (click)="onClose()">
+      <mat-icon>fitness_center</mat-icon>
+      <span class="nav-caption">Training</span>
+    </a>
+    <mat-list-item>
+      <button type="button" mat-icon-button (click)="onClose()">
+        <mat-icon>power_settings_new</mat-icon>
+        <span class="nav-caption">Logout</span>
+      </button>
+    </mat-list-item>
+  </ng-container>
 </mat-nav-list>
