@@ -1,0 +1,30 @@
+.sidenav-header {
+  margin: 0;
+  height: 56px;
+  a.header-text {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+hr {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  border-style: ridge;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+  &:hover,
+  &:active {
+    color: lightgray;
+  }
+}

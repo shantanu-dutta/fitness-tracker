@@ -1,0 +1,9 @@
+.new-training {
+  padding: 30px;
+}
+
+@media screen and (max-width:599px) {
+  .new-training {
+    padding: 10px;
+  }
+}
